@@ -23,7 +23,7 @@ class GridViewModel @Inject constructor(private val pictureInterface: PictureInt
         getPictureResponse()
     }
 
-    private fun getPictureResponse() {
+    fun getPictureResponse() {
         viewModelScope.launch {
             pictureInterface.getImageResponse().collect { result ->
                 when (result) {

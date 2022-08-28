@@ -23,7 +23,7 @@
     <fragment
         android:id="@+id/fragment_details"
         android:name="com.example.nasapictureapp.features.details.views.DetailsFragment"
-        android:label=""
+        android:label="NASA Details"
         tools:layout="@layout/fragment_details" />
 
 </navigation>

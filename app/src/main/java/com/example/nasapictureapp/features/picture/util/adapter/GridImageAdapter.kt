@@ -41,7 +41,7 @@ class GridImageAdapter(var listener: OnClickListener) :
         holder.bind(differ.currentList[position])
 
         holder.binding.image.setOnClickListener {
-            listener.onClickItem(it, differ.currentList[position])
+            listener.onClickItem(it, differ.currentList[position],position)
         }
     }
 

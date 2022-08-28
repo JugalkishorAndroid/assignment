@@ -1,8 +1,4 @@
 
-t
-Dapp/src/test/java/com/example/nasapictureapp/core/api/BaseApiTest.kt,c\8\c87c5d920aab611fcd40d87b6414c1154c1c4732
-€
-Papp/src/test/java/com/example/nasapictureapp/core/viewmodel/BaseViewModelTest.kt,0\f\0fa5bfdab2a9454e9f5f3d67c5a2222f277c8145
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 ƒ
@@ -13,12 +9,8 @@ y
 Iapp/src/main/java/com/example/nasapictureapp/util/InternetConnectivity.kt,d\8\d8e1014fcbd2b6574083e315dd8c4effd2528719
 l
 <app/src/main/java/com/example/nasapictureapp/di/AppModule.kt,a\e\ae4a0313682442ea947179daa2bc526e4155afcb
-†
-Vapp/src/main/java/com/example/nasapictureapp/features/details/views/DetailsFragment.kt,1\1\11e8957aea2d2d9df54b60398d04c2b4267d6d56
 Œ
 \app/src/main/java/com/example/nasapictureapp/features/picture/data/response/ImageResponse.kt,5\f\5f67fa33f13d40061da58003ff6077d4ad6167b9
-t
-Dapp/src/main/java/com/example/nasapictureapp/util/OnClickListener.kt,7\2\721a6ede0353eea373417150957519e0b4c40293
 y
 Iapp/src/main/java/com/example/nasapictureapp/util/CustomProgressDialog.kt,f\0\f02cdbffd48745507e9b8c04987625664b438eb3
 q
@@ -31,5 +23,3 @@ A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-l
-<app/src/main/java/com/example/nasapictureapp/MainActivity.kt,0\2\02f5a69dd293d31694e374a1d0dbe2072e72a162
