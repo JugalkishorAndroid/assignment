@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/fragment_grid">
+
+    <fragment
+        android:id="@+id/fragment_grid"
+        android:name="com.example.nasapictureapp.features.picture.views.GridFragment"
+        android:label="Nasa Pictures"
+        tools:layout="@layout/fragment_grid">
+
+        <action
+            android:id="@+id/action_to_fragment_details"
+            app:destination="@+id/fragment_details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="com.example.nasapictureapp.features.details.views.DetailsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_details" />
+
+</navigation>

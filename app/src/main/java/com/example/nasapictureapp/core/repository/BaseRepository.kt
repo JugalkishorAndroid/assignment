@@ -39,7 +39,7 @@ abstract class BaseRepository {
         emitAll(flow)
     }.flowOn(Dispatchers.IO)
 
-    private suspend fun <T, P> safeApiCallInternal(
+    protected suspend fun <T, P> safeApiCallInternal(
         apiCall: suspend () -> Response<T>,
         entityProcessor: (T) -> P,
         saveNetworkResult: suspend (T) -> Unit
@@ -78,10 +78,6 @@ abstract class BaseRepository {
                         responseBody.get("error").toString(),
                         Source.REMOTE
                     )
-                }
-                responseBody.has("tokenId:") && responseBody.get("tokenId:").toString()
-                    .isNotEmpty() -> {
-                    RepoResult.Success(entityProcessor(apiResult.body()!!), Source.REMOTE)
                 }
                 else -> {
                     //Direct mention of string should be removed from below
