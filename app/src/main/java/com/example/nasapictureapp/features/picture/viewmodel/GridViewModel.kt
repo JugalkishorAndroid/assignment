@@ -29,6 +29,7 @@ class GridViewModel @Inject constructor(private val pictureInterface: PictureInt
                 when (result) {
                     is RepoResult.Success -> {
                         Timber.e("result $result")
+                        _imageSources.postValue(result.data!!)
                     }
                     is RepoResult.Loading -> {
                         handleLoading(result.loadingStatus)

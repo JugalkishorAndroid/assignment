@@ -31,9 +31,6 @@ class GridImageAdapter(var listener: OnClickListener) :
     }
     val differ = AsyncListDiffer(this, differCallback)
 
-    fun setEntries(values: List<ImageResponse>) {
-        differ.submitList(values)
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GridImageViewHolder {
         val binding = RowGridBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -42,6 +39,10 @@ class GridImageAdapter(var listener: OnClickListener) :
 
     override fun onBindViewHolder(holder: GridImageViewHolder, position: Int) {
         holder.bind(differ.currentList[position])
+
+        holder.binding.image.setOnClickListener {
+            listener.onClickItem(it, differ.currentList[position])
+        }
     }
 
     override fun getItemCount(): Int {
